@@ -142,16 +142,27 @@ def load_resources():
     }
     for name, path in model_files.items():
         if path.exists():
-            models[name] = joblib.load(path)
+            try:
+                models[name] = joblib.load(path)
+            except Exception as e:
+                print(f"[CardioX Resource Loader] Note: Could not load {name} ({e}). Skipping.")
 
     scaler_path = MODELS_DIR / "feature_scaler.joblib"
-    scaler = joblib.load(scaler_path) if scaler_path.exists() else None
+    scaler = None
+    if scaler_path.exists():
+        try:
+            scaler = joblib.load(scaler_path)
+        except Exception as e:
+            print(f"[CardioX Resource Loader] Note: Could not load feature_scaler ({e}).")
 
     comp_path = MODELS_DIR / "model_comparison.json"
     comparison_data = []
     if comp_path.exists():
-        with open(comp_path, "r") as f:
-            comparison_data = json.load(f)
+        try:
+            with open(comp_path, "r") as f:
+                comparison_data = json.load(f)
+        except Exception as e:
+            print(f"[CardioX Resource Loader] Note: Could not load comparison data ({e}).")
 
     return models, scaler, comparison_data
 
