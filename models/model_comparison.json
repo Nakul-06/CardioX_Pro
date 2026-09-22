@@ -1,0 +1,77 @@
+[
+  {
+    "model_name": "Random Forest",
+    "accuracy": 73.03,
+    "precision": 74.98,
+    "recall": 68.24,
+    "specificity": 77.71,
+    "f1_score": 71.46,
+    "roc_auc": 79.48,
+    "confusion_matrix": {
+      "tn": 5386,
+      "fp": 1545,
+      "fn": 2155,
+      "tp": 4631
+    }
+  },
+  {
+    "model_name": "XGBoost",
+    "accuracy": 73.05,
+    "precision": 74.82,
+    "recall": 68.61,
+    "specificity": 77.39,
+    "f1_score": 71.58,
+    "roc_auc": 79.41,
+    "confusion_matrix": {
+      "tn": 5364,
+      "fp": 1567,
+      "fn": 2130,
+      "tp": 4656
+    }
+  },
+  {
+    "model_name": "Logistic Regression",
+    "accuracy": 72.4,
+    "precision": 74.5,
+    "recall": 67.21,
+    "specificity": 77.48,
+    "f1_score": 70.67,
+    "roc_auc": 78.59,
+    "confusion_matrix": {
+      "tn": 5370,
+      "fp": 1561,
+      "fn": 2225,
+      "tp": 4561
+    }
+  },
+  {
+    "model_name": "Gradient Boosting",
+    "accuracy": 73.03,
+    "precision": 75.04,
+    "recall": 68.16,
+    "specificity": 77.81,
+    "f1_score": 71.43,
+    "roc_auc": 79.55,
+    "confusion_matrix": {
+      "tn": 5393,
+      "fp": 1538,
+      "fn": 2161,
+      "tp": 4625
+    }
+  },
+  {
+    "model_name": "Decision Tree",
+    "accuracy": 72.43,
+    "precision": 73.61,
+    "recall": 69.01,
+    "specificity": 75.78,
+    "f1_score": 71.24,
+    "roc_auc": 77.67,
+    "confusion_matrix": {
+      "tn": 5252,
+      "fp": 1679,
+      "fn": 2103,
+      "tp": 4683
+    }
+  }
+]
