@@ -1,0 +1,112 @@
+[
+  {
+    "batch_id": 1,
+    "batch_size": 500,
+    "pre_update_accuracy": 59.4,
+    "post_update_accuracy": 66.4,
+    "adaptation_gain": 7.0,
+    "f1_score": 67.32,
+    "roc_auc": 72.58,
+    "concept_drift_score": 0.0325,
+    "weight_delta_norm": 37.4896
+  },
+  {
+    "batch_id": 2,
+    "batch_size": 500,
+    "pre_update_accuracy": 67.4,
+    "post_update_accuracy": 62.4,
+    "adaptation_gain": -5.0,
+    "f1_score": 64.66,
+    "roc_auc": 69.37,
+    "concept_drift_score": 0.016,
+    "weight_delta_norm": 19.8294
+  },
+  {
+    "batch_id": 3,
+    "batch_size": 500,
+    "pre_update_accuracy": 59.6,
+    "post_update_accuracy": 61.6,
+    "adaptation_gain": 2.0,
+    "f1_score": 63.36,
+    "roc_auc": 67.55,
+    "concept_drift_score": 0.0295,
+    "weight_delta_norm": 14.8941
+  },
+  {
+    "batch_id": 4,
+    "batch_size": 500,
+    "pre_update_accuracy": 62.4,
+    "post_update_accuracy": 61.4,
+    "adaptation_gain": -1.0,
+    "f1_score": 64.06,
+    "roc_auc": 67.69,
+    "concept_drift_score": 0.0149,
+    "weight_delta_norm": 22.1405
+  },
+  {
+    "batch_id": 5,
+    "batch_size": 500,
+    "pre_update_accuracy": 60.6,
+    "post_update_accuracy": 66.2,
+    "adaptation_gain": 5.6,
+    "f1_score": 64.72,
+    "roc_auc": 71.49,
+    "concept_drift_score": 0.0391,
+    "weight_delta_norm": 17.0311
+  },
+  {
+    "batch_id": 6,
+    "batch_size": 500,
+    "pre_update_accuracy": 68.4,
+    "post_update_accuracy": 69.4,
+    "adaptation_gain": 1.0,
+    "f1_score": 70.97,
+    "roc_auc": 78.28,
+    "concept_drift_score": 0.0199,
+    "weight_delta_norm": 12.8138
+  },
+  {
+    "batch_id": 7,
+    "batch_size": 500,
+    "pre_update_accuracy": 63.8,
+    "post_update_accuracy": 66.0,
+    "adaptation_gain": 2.2,
+    "f1_score": 65.86,
+    "roc_auc": 71.28,
+    "concept_drift_score": 0.018,
+    "weight_delta_norm": 15.0489
+  },
+  {
+    "batch_id": 8,
+    "batch_size": 500,
+    "pre_update_accuracy": 71.2,
+    "post_update_accuracy": 66.8,
+    "adaptation_gain": -4.4,
+    "f1_score": 66.67,
+    "roc_auc": 71.65,
+    "concept_drift_score": 0.0236,
+    "weight_delta_norm": 16.035
+  },
+  {
+    "batch_id": 9,
+    "batch_size": 500,
+    "pre_update_accuracy": 65.2,
+    "post_update_accuracy": 62.2,
+    "adaptation_gain": -3.0,
+    "f1_score": 64.67,
+    "roc_auc": 71.6,
+    "concept_drift_score": 0.0217,
+    "weight_delta_norm": 15.2608
+  },
+  {
+    "batch_id": 10,
+    "batch_size": 500,
+    "pre_update_accuracy": 61.0,
+    "post_update_accuracy": 66.4,
+    "adaptation_gain": 5.4,
+    "f1_score": 65.71,
+    "roc_auc": 71.22,
+    "concept_drift_score": 0.0182,
+    "weight_delta_norm": 13.8184
+  }
+]

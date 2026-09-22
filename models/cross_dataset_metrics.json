@@ -1,0 +1,159 @@
+{
+  "cohorts": [
+    "70k Cohort",
+    "Cleveland (303)",
+    "Statlog (270)"
+  ],
+  "features": [
+    "age",
+    "sex",
+    "systolic_bp",
+    "cholesterol_level",
+    "fasting_glucose"
+  ],
+  "results_matrix_auc": [
+    [
+      83.14,
+      55.29,
+      55.79
+    ],
+    [
+      60.04,
+      98.19,
+      98.17
+    ],
+    [
+      59.21,
+      95.1,
+      98.54
+    ]
+  ],
+  "results_matrix_accuracy": [
+    [
+      75.55,
+      49.5,
+      48.89
+    ],
+    [
+      52.83,
+      93.07,
+      92.96
+    ],
+    [
+      50.22,
+      88.45,
+      92.96
+    ]
+  ],
+  "results_matrix_f1": [
+    [
+      74.26,
+      58.98,
+      57.93
+    ],
+    [
+      38.49,
+      92.63,
+      92.31
+    ],
+    [
+      30.96,
+      87.54,
+      92.37
+    ]
+  ],
+  "detailed_evaluations": [
+    {
+      "train_cohort": "70k Cohort",
+      "test_cohort": "70k Cohort",
+      "is_in_domain": true,
+      "accuracy": 75.55,
+      "f1_score": 74.26,
+      "roc_auc": 83.14
+    },
+    {
+      "train_cohort": "70k Cohort",
+      "test_cohort": "Cleveland (303)",
+      "is_in_domain": false,
+      "accuracy": 49.5,
+      "f1_score": 58.98,
+      "roc_auc": 55.29
+    },
+    {
+      "train_cohort": "70k Cohort",
+      "test_cohort": "Statlog (270)",
+      "is_in_domain": false,
+      "accuracy": 48.89,
+      "f1_score": 57.93,
+      "roc_auc": 55.79
+    },
+    {
+      "train_cohort": "Cleveland (303)",
+      "test_cohort": "70k Cohort",
+      "is_in_domain": false,
+      "accuracy": 52.83,
+      "f1_score": 38.49,
+      "roc_auc": 60.04
+    },
+    {
+      "train_cohort": "Cleveland (303)",
+      "test_cohort": "Cleveland (303)",
+      "is_in_domain": true,
+      "accuracy": 93.07,
+      "f1_score": 92.63,
+      "roc_auc": 98.19
+    },
+    {
+      "train_cohort": "Cleveland (303)",
+      "test_cohort": "Statlog (270)",
+      "is_in_domain": false,
+      "accuracy": 92.96,
+      "f1_score": 92.31,
+      "roc_auc": 98.17
+    },
+    {
+      "train_cohort": "Statlog (270)",
+      "test_cohort": "70k Cohort",
+      "is_in_domain": false,
+      "accuracy": 50.22,
+      "f1_score": 30.96,
+      "roc_auc": 59.21
+    },
+    {
+      "train_cohort": "Statlog (270)",
+      "test_cohort": "Cleveland (303)",
+      "is_in_domain": false,
+      "accuracy": 88.45,
+      "f1_score": 87.54,
+      "roc_auc": 95.1
+    },
+    {
+      "train_cohort": "Statlog (270)",
+      "test_cohort": "Statlog (270)",
+      "is_in_domain": true,
+      "accuracy": 92.96,
+      "f1_score": 92.37,
+      "roc_auc": 98.54
+    }
+  ],
+  "summary_metrics": {
+    "70k Cohort": {
+      "in_domain_auc": 83.14,
+      "cross_domain_auc_mean": 55.54,
+      "generalization_gap": 27.6,
+      "invariance_score": 72.4
+    },
+    "Cleveland (303)": {
+      "in_domain_auc": 98.19,
+      "cross_domain_auc_mean": 79.11,
+      "generalization_gap": 19.08,
+      "invariance_score": 80.92
+    },
+    "Statlog (270)": {
+      "in_domain_auc": 98.54,
+      "cross_domain_auc_mean": 77.16,
+      "generalization_gap": 21.39,
+      "invariance_score": 78.61
+    }
+  }
+}
