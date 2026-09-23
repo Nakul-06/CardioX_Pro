@@ -233,7 +233,6 @@ with st.sidebar:
             "🩺 Patient Risk Predictor",
             "📈 Longitudinal Health Tracking",
             "🤖 Model Performance Analytics",
-            "🔄 Adaptive Incremental Learning",
             "🌐 Cross-Dataset Generalization",
             "📊 Dataset & Clinical Parameters"
         ],
@@ -245,7 +244,6 @@ with st.sidebar:
     st.markdown("- **Primary Cohort:** 70,000 Patient Records")
     st.markdown("- **SMOTE Partitioning:** 55,443 Train / 13,861 Test (50/50 Balanced)")
     st.markdown("- **Supervised Models:** 5 Clinical Classifiers")
-    st.markdown("- **Online Learning:** Streaming Mini-Batch SGD")
     st.markdown("- **External Cohorts:** Cleveland (303) & Statlog (270)")
     st.markdown("---")
     st.caption("Enterprise Cardiology AI System")
@@ -1052,10 +1050,10 @@ elif menu == "🌐 Cross-Dataset Generalization":
                     "Cohort": c_n,
                     "In-Domain AUC": f"{m_vals['in_domain_auc']:.1f}%",
                     "Cross-Domain AUC": f"{m_vals['cross_domain_auc_mean']:.1f}%",
-                    "Generalization Gap (Δ)": f"{m_vals['generalization_gap']:.1f}%",
+                    "Gen. Gap (Δ)": f"{m_vals['generalization_gap']:.1f}%",
                     "Invariance Score": f"{m_vals['invariance_score']:.1f}%"
                 })
-            st.dataframe(pd.DataFrame(summary_rows), use_container_width=True)
+            st.dataframe(pd.DataFrame(summary_rows), use_container_width=True, hide_index=True)
 
         with col_m2:
             st.markdown("###### **Cross-Dataset Generalization Heatmap**")
