@@ -1,5 +1,20 @@
 [
   {
+    "model_name": "CardioX Voting Ensemble (Tuned)",
+    "accuracy": 73.38,
+    "precision": 75.76,
+    "recall": 68.76,
+    "specificity": 78.0,
+    "f1_score": 72.09,
+    "roc_auc": 79.82,
+    "confusion_matrix": {
+      "tn": 5406,
+      "fp": 1525,
+      "fn": 2165,
+      "tp": 4765
+    }
+  },
+  {
     "model_name": "Random Forest",
     "accuracy": 73.3,
     "precision": 75.84,
