@@ -125,6 +125,40 @@ st.markdown("""
         color: #2563eb !important;
         box-shadow: 0 2px 6px rgba(59, 130, 246, 0.15) !important;
     }
+    /* Metric Cards: Eliminate dotted ellipsis and guarantee 100% text visibility */
+    [data-testid="stMetric"] {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 12px 14px;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        min-width: 0 !important;
+    }
+    [data-testid="stMetricValue"], [data-testid="stMetricValue"] > div, [data-testid="stMetricValue"] * {
+        font-size: 1.35rem !important;
+        font-weight: 700 !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+        line-height: 1.25 !important;
+    }
+    [data-testid="stMetricLabel"], [data-testid="stMetricLabel"] > div, [data-testid="stMetricLabel"] p, [data-testid="stMetricLabel"] * {
+        font-size: 0.88rem !important;
+        font-weight: 600 !important;
+        color: #334155 !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+    }
+    [data-testid="stMetricDelta"], [data-testid="stMetricDelta"] > div, [data-testid="stMetricDelta"] * {
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+        font-size: 0.82rem !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
